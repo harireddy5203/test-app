@@ -1,0 +1,1 @@
+{"variable":{"vpc_id":{"default":""},"region":{"default":""},"ecr_repo_path":{"default":"dkr.ecr..amazonaws.com/test-app"},"artifact_name":{"default":"test-app"}}}
