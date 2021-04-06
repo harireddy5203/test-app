@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+
+    # Service - test-app-db-server
+    test-app-db-server:
+        container_name: test-app-db-server
+        image: postgres:12.4
+        restart: always
+        ports:
+            - "5432:5432"
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+            - POSTGRES_DB=test_db
+
+# Service - test-app-service
+    test-app-service:
+        container_name: test-app-service
+        image: test/test-app-service:1.0.0
+        restart: always
+        ports:
+            - "8099:8099"
+        depends_on:
+            - test-app-db-server
+

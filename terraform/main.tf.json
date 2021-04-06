@@ -1,0 +1,1 @@
+[{"provider":{"aws":{"secret_key":"","access_key":"12345678988765","region":""}}},{"module":{"ecs-minimal-conf":{"source":"/opt/apps/innominds/isymphony/projects/temp/14116839534906/terraform/ecs-minimal-conf"}}}]
